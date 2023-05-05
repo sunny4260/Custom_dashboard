@@ -29,7 +29,7 @@ function SidebarCollapse () {
 
 databaseArray = [];
 window.onload = function(){
-    fetch('./database/db.json')
+    fetch('./db.json')
     .then((response) => response.json())
     .then((json) => {
         for (let index = 0; index < json.length; index++) {
