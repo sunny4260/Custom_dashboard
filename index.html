@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  
+  <title>DashBoard</title>
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="index.scss">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.slim.min.js" integrity="sha256-a2yjHM4jnF9f54xUQakjZGaqYs/V1CYvWpoqZzC2/Bw=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/d781584eb1.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- Bootstrap NavBar -->
+  <nav class="navbar navbar-expand-md navbar-dark head-nav">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarAdmin"
+      aria-controls="navbarAdmin" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="#">
+      <span class="menu-collapsed"><span class="blue"> <img src="./logo2.jpg" alt="logo" class="logo"> Custom
+        </span>DashBoard</span>
+    </a>
+    <div class="collapse navbar-collapse" id="navbarAdmin">
+      <ul class="navbar-nav ml-auto">
+        <div class="input-group rounded">
+          <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
+            aria-describedby="search-addon" />
+          <span class="input-group-text border-0" id="search-addon">
+            <i class="fas fa-search"></i>
+          </span>
+        </div>
+      </ul>
+    </div>
+  </nav>
+  <!-- NavBar END -->
+
+  <!-- Bootstrap row -->
+  <div class="row" id="body-row">
+
+    <!-- Seitenleiste -->
+    <div id="sidebar-container" class="sidebar-expanded d-none d-md-block">
+
+      <!-- d- * verbirgt die Sidebar in kleineren Geräten. Die Einträge können im Navbar-Menü gespeichert werden -->
+      <!-- Bootstrap-Listengruppe -->
+      <ul class="list-group">
+
+        <!-- Trennzeichen mit Titel -->
+        <li
+          class="list-group-item sidebar-separator-title text-muted d-flex justify-content-center align-items-center menu-collapsed">
+          <button type="button" class="btn btn-success w75" data-toggle="modal" data-target="#exampleModalCenter"><i
+              class="fa-sharp fa-solid fa-plus mr-3"></i>ADD</button>
+        </li>
+        <li
+          class="list-group-item sidebar-separator-title text-muted d-flex justify-content-center align-items-center menu-collapsed">
+          <button type="button" class="btn btn-create w75"><i class="fa-solid fa-pen mr-3"></i>Create</button>
+        </li>
+
+        <!-- / END Separator -->
+        <!-- Menü mit Untermenü -->
+        <a href="#submenu1" class="bg-white list-group-item list-group-item-action flex-column align-items-start">
+          <div class="d-flex w-100 justyfy-content-start align-items-center">
+            <span class="fas fa-tachometer-alt fa-fw mr-3"></span>
+            <span class="menu-collapsed">All</span>
+          </div>
+        </a>
+        <a href="#submenu2" data-toggle="collapse" aria-expanded="false"
+          class="bg-white list-group-item list-group-item-action flex-column align-items-start">
+          <div class="d-flex w-100 justify-content-start align-items-center">
+            <span class="fas fa-clock fa-fw mr-3"></span>
+            <span class="menu-collapsed">Recent</span>
+          </div>
+        </a>
+
+        <!-- Inhalt des Untermenüs -->
+        <a href="#" class="bg-white list-group-item list-group-item-action">
+          <div class="d-flex w-100 justify-content-start align-items-center">
+            <span class="fas  fa-star fa-fw mr-3"></span>
+            <span class="menu-collapsed">Starred</span>
+          </div>
+        </a>
+
+        <!-- /END Separator -->
+        <a href="#" class="bg-white list-group-item list-group-item-action">
+          <div class="d-flex w-100 justify-content-start align-items-center">
+            <span class="fas fa-calendar fa-fw mr-3"></span>
+            <span class="menu-collapsed">Test Demo </span>
+          </div>
+        </a>
+        <a href="#" class="bg-white list-group-item list-group-item-action">
+          <div class="d-flex w-100 justify-content-start align-items-center">
+            <span class="fas fa-calendar fa-fw mr-3"></span>
+            <span class="menu-collapsed">Page Builder Demo </span>
+          </div>
+        </a>
+
+        <!-- /END Separator -->
+        <a href="#" class="bg-white list-group-item list-group-item-action">
+          <div class="d-flex w-100 justify-content-start align-items-center">
+            <span class="fas fa-calendar fa-fw mr-3"></span>
+            <span class="menu-collapsed">Metabase</span>
+          </div>
+        </a>
+      </ul>
+      <!-- List Group END-->
+    </div>
+    <!-- Seitenleiste-container END -->
+
+    <!-- MAIN -->
+    <div class="col p-4">
+      <ul class="navbar-nav ">
+        <div class="input-group rounded flex-between">
+          <div class="w50">
+            <h4>Page Builder Demo</h4>
+          </div>
+          <div class="w50-flex">
+            <input type="search" class="form-control" placeholder="Filter" aria-label="Filter"
+              aria-describedby="search-addon" />
+            <span class="input-group-text border-0 " id="search-addon">
+              <i class="fas fa-search"></i>
+            </span>
+          </div>
+        </div>
+      </ul>
+      <hr>
+
+      <div class="row" id="dashboardGroupContainer">
+        <!-- <div class="col">
+          <div class="flex-start btn-container btn-active">
+            <div class="mr-10"><i class="fa-solid fa-star"></i></div>
+            <div class="">
+              <h6 class="m0">Dashboard</h6>
+              <p class="m0 fs-14">Test Demo</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="flex-start btn-container">
+            <div class="mr-10"><i class="fa-regular fa-star"></i></div>
+            <div class="">
+              <h6 class="m0">Dashboard</h6>
+              <p class="m0 fs-14">Test Demo</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="flex-start btn-container">
+            <div class="mr-10"><i class="fa-regular fa-star"></i></div>
+            <div class="">
+              <h6 class="m0">Dashboard</h6>
+              <p class="m0 fs-14">Test Demo</p>
+            </div>
+          </div>
+        </div> -->
+      </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="dashboardType">DashBoard Type</label>
+                  <select class="form-control border-bottom" id="dashboardType">
+                    <option value="">Select</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="dashboardGroup">Dashboard Group</label>
+                  <select class="form-control border-bottom" id="dashboardGroup">
+                    <option value="">Select</option>
+                    <option value="Test Demo">Test Demo</option>
+                    <option value="Test Demo">Test Demo</option>
+                    <option value="Page Builder Demo">Page Builder Demo</option>
+                    <option value="Metabase">Metabase</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="dashboardName">Dashboard Name</label>
+                  <select class="form-control border-bottom" id="dashboardName">
+                    <option value="">Select</option>
+                    <option value="DashBoard 1">DashBoard 1</option>
+                    <option value="DashBoard 2">DashBoard 2</option>
+                    <option value="DashBoard 3">DashBoard 3</option>
+                    <option value="DashBoard 4">DashBoard 4</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="dashboardId">Dashboard Id</label>
+                  <select class="form-control border-bottom" id="dashboardId">
+                    <option value="">Select</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="roleId">Role Id</label>
+                  <select class="form-control border-bottom" id="roleId">
+                    <option value="">Select</option>
+                    <option value="admin">admin</option>
+                    <option value="systemadmin">systemadmin</option>
+                    <option value="user">user</option>
+                    <option value="admin">admin</option>
+                  </select>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-cancel" data-dismiss="modal">Cancel</button>
+              <button type="button" class="btn btn-warning" onclick="submitArrayForm()">Save</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Main Col END -->
+  </div>
+  <!-- body-row END -->
+
+
+
+  <!-- Optional JavaScript -->
+  <script src="index.js"></script>
+
+</body>
+
+</html>
