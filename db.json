@@ -1,0 +1,34 @@
+[
+    { 
+    "dashboard_type": "",
+    "dashboard_group": "Test Demo",
+    "dashboard_name": "Dashboard 1",
+    "dashboard_description": "Test Description",
+    "dashboard_id": "1",
+    "dashboard_role": "admin, user"
+    },
+    {
+    "dashboard_type": "",
+    "dashboard_group": "Test Demo",
+    "dashboard_name": "Dashboard 2",
+    "dashboard_description": "Test Description",
+    "dashboard_id": "2",
+    "dashboard_role": "systemadmin"
+    },
+    {
+    "dashboard_type": "",
+    "dashboard_group": "Page Builder Demo",
+    "dashboard_name": "Dashboard 3",
+    "dashboard_description": "Test Description",
+    "dashboard_id": "3",
+    "dashboard_role": "user"
+    },
+    {
+    "dashboard_type": "",
+    "dashboard_group": "Metabase",
+    "dashboard_name": "Dashboard 4",
+    "dashboard_description": "Test Description",
+    "dashboard_id": "4",
+    "dashboard_role": "admin"
+    }
+]
