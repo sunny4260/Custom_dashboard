@@ -1,0 +1,96 @@
+ /* Custom CSS */
+html {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    background: #f2f2f2;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.head-nav {
+    background-color: #0b0b52;
+}
+
+.blue{
+    color: rgb(106, 169, 203);
+}
+
+.logo{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.btn-cancel {
+    background: transparent;
+    color: #ffc107;
+}
+
+.border-bottom {
+    border: none !important;
+    outline: none !important;
+    border-bottom: 1px solid lightgrey !important;
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.w50-flex {
+    width: 50%;
+    display: flex;
+}
+
+.w50 {
+    width: 50%;
+}
+
+.flex-start {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.btn-container {
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid lightgrey;
+    padding: 5px 10px;
+}
+.btn-active, .btn-container:hover{
+    background: rgb(226, 240, 251);
+    border: 1px solid lightgrey;
+    cursor: pointer;
+}
+
+.mr-10 {
+    margin-right: 10px;
+}
+
+.m0 {
+    margin: 0;
+}
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.fs-14 {
+    font-size: 14px;
+}
+
+.w75 {
+    width: 75%;
+}
+
+.btn-create {
+    border: 1px solid #000 !important;
+    background: transparent;
+}
+
+.btn-active > div > h6 {
+    color: #3ed7d7 !important;
+}
